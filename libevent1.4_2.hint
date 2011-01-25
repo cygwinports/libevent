@@ -1,5 +1,5 @@
 category: Libs
-requires: libgcc1
+requires:
 external-source: libevent
 sdesc: "Event notification library (runtime)"
 ldesc: "The libevent API provides a mechanism to execute a callback 

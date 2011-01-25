@@ -5,6 +5,6 @@ SRC_DIR="${P}-stable"
 
 PATCH_URI="1.4.13-no-undefined.patch"
 
-PKG_NAMES="${PN} ${PN}1.4_2 ${PN}-devel"
+PKG_NAMES="${PN}1.4_2 ${PN}-devel"
 libevent1_4_2_CONTENTS="usr/bin/*-1-4-2.dll"
 libevent_devel_CONTENTS="usr/bin/*py usr/include/ usr/lib/ usr/share/"
