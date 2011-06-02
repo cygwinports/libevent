@@ -1,0 +1,24 @@
+--- origsrc/libevent-2.0.11-stable/Makefile.am	2011-04-27 19:24:36.000000000 -0500
++++ src/libevent-2.0.11-stable/Makefile.am	2011-06-01 21:55:31.238116700 -0500
+@@ -172,13 +172,8 @@ CORE_SRC = event.c evthread.c buffer.c \
+ 	evmap.c	log.c evutil.c evutil_rand.c strlcpy.c $(SYS_SRC)
+ EXTRA_SRC = event_tagging.c http.c evdns.c evrpc.c
+ 
+-if BUILD_WIN32
+ NO_UNDEFINED = -no-undefined
+ MAYBE_CORE = libevent_core.la
+-else
+-NO_UNDEFINED =
+-MAYBE_CORE =
+-endif
+ 
+ GENERIC_LDFLAGS = -version-info $(VERSION_INFO) $(RELEASE) $(NO_UNDEFINED)
+ 
+@@ -192,6 +187,7 @@ libevent_core_la_LDFLAGS = $(GENERIC_LDF
+ 
+ if PTHREADS
+ libevent_pthreads_la_SOURCES = evthread_pthread.c
++libevent_pthreads_la_LIBADD = $(MAYBE_CORE) $(SYS_LIBS)
+ libevent_pthreads_la_LDFLAGS = $(GENERIC_LDFLAGS)
+ endif
+ 

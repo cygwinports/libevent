@@ -3,8 +3,8 @@ HOMEPAGE="http://www.monkey.org/~provos/libevent/"
 SRC_URI="http://www.monkey.org/~provos/${P}-stable.tar.gz"
 SRC_DIR="${P}-stable"
 
-PATCH_URI="1.4.13-no-undefined.patch"
+PATCH_URI="2.0.11-no-undefined.patch"
 
-PKG_NAMES="${PN}1.4_2 ${PN}-devel"
-libevent1_4_2_CONTENTS="usr/bin/*-1-4-2.dll"
+PKG_NAMES="${PN}2.0_5 ${PN}-devel"
+libevent2_0_5_CONTENTS="usr/bin/*-2-0-5.dll"
 libevent_devel_CONTENTS="usr/bin/*py usr/include/ usr/lib/ usr/share/"
