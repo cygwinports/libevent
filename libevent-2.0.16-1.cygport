@@ -1,10 +1,10 @@
 DESCRIPTION="Event notification library"
-HOMEPAGE="http://www.monkey.org/~provos/libevent/"
-SRC_URI="http://www.monkey.org/~provos/${P}-stable.tar.gz"
+HOMEPAGE="http://www.libevent.org/"
+SRC_URI="https://github.com/downloads/libevent/${PN}/${P}-stable.tar.gz"
 SRC_DIR="${P}-stable"
-
-PATCH_URI="2.0.11-no-undefined.patch"
 
 PKG_NAMES="${PN}2.0_5 ${PN}-devel"
 libevent2_0_5_CONTENTS="usr/bin/*-2-0-5.dll"
 libevent_devel_CONTENTS="usr/bin/*py usr/include/ usr/lib/ usr/share/"
+
+DIFF_EXCLUDES="regress.gen.*"
