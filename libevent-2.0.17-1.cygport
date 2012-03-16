@@ -8,3 +8,7 @@ libevent2_0_5_CONTENTS="usr/bin/*-2-0-5.dll"
 libevent_devel_CONTENTS="usr/bin/*py usr/include/ usr/lib/ usr/share/"
 
 DIFF_EXCLUDES="regress.gen.*"
+
+CYGCONF_ARGS="--disable-static"
+
+KEEP_LA_FILES="none"
