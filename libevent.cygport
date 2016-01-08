@@ -1,5 +1,5 @@
 NAME="libevent"
-VERSION=2.0.21
+VERSION=2.0.22
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Event notification library"
@@ -8,8 +8,8 @@ function when a specific event occurs on a file descriptor or after a timeout
 has been reached. Furthermore, libevent also support callbacks due to signals
 or regular timeouts."
 HOMEPAGE="http://www.libevent.org/"
-SRC_URI="https://github.com/downloads/libevent/${PN}/${P}-stable.tar.gz"
-SRC_DIR="${P}-stable"
+SRC_URI="https://github.com/libevent/libevent/releases/download/release-${VERSION}-stable/libevent-${VERSION}-stable.tar.gz"
+SRC_DIR="libevent-${VERSION}-stable"
 
 PKG_NAMES="${PN}2.0_5 ${PN}-devel"
 libevent2_0_5_CONTENTS="usr/bin/*-2-0-5.dll"
